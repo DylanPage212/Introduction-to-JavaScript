@@ -130,7 +130,7 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(age, weight){
+function hungryDog(weight, age){
     if(age >= 1){
       if(weight <= 5) {
         return weight * .05;
@@ -258,12 +258,12 @@ Using the annoyingSong function below do the following:
 
 function annoyingSong(num){
         while(num >= 1 ) {
-          console.log( num + " bottles of soda on the wall, " + num + " bottles of soda, take one down pass it around " + (num - 1) + " bottles of soda on the wall")
+          return num + " bottles of soda on the wall, " + num + " bottles of soda, take one down pass it around " + (num - 1) + " bottles of soda on the wall";
           num--;
         }
   }
 
-  annoyingSong(10);
+  console.log(annoyingSong(10));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -283,19 +283,19 @@ Using the grade function below do the following:
   
 function grade(score){
     if(score >= 90) {
-      return "A";
+      return "you got an A";
     }
     else if (score <= 89.99 && score >= 80) {
-      return "B";
+      return "you got a B";
     }
     else if (score <= 79.99 && score >= 70) {
-      return "C";
+      return "you got a C";
     }
     else if (score <= 69.99 && score >= 60) {
-      return "D";
+      return "you got a D";
     }
     else if (score <= 59.99) {
-      return "F";
+      return "you got an F";
     }
   }
   
